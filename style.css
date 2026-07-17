@@ -377,9 +377,9 @@ section h3{
 
     display:grid;
 
-    grid-template-columns:180px 1fr;
+    grid-template-columns:220px 1fr;
 
-    gap:60px;
+    gap:50px;
 
     align-items:center;
 
@@ -389,47 +389,13 @@ section h3{
 
 .builder-image img{
 
-    width:180px;
+    width:220px;
+
+    max-width:100%;
 
     border-radius:10px;
 
-    box-shadow:0 25px 50px rgba(0,0,0,.5);
-
-}
-
-.builder-text{
-
-    font-size:17px;
-
-}
-
-.builder-text p:first-child{
-
-    font-size:24px;
-
-    margin-bottom:20px;
-
-    color:#c8a86a;
-
-}
-
-@media(max-width:900px){
-
-.builder-grid{
-
-    grid-template-columns:1fr;
-
-    gap:30px;
-
-}
-
-.builder-image{
-
-    max-width:420px;
-
-    margin:auto;
-
-}
+    box-shadow:0 20px 40px rgba(0,0,0,.5);
 
 }
 
