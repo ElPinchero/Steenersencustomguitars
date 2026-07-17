@@ -1,195 +1,301 @@
+*{
+
+    margin:0;
+
+    padding:0;
+
+    box-sizing:border-box;
+
+}
+
+html{
+
+    scroll-behavior:smooth;
+
+}
+
 body{
 
-margin:0;
+    background:#0d0d0d;
 
-background:#101010;
+    color:#f4f4f4;
 
-color:white;
+    font-family:'Montserrat',sans-serif;
 
-font-family:'Montserrat',sans-serif;
+    line-height:1.8;
 
 }
 
 header{
 
-display:flex;
+    position:fixed;
 
-justify-content:space-between;
+    top:0;
 
-align-items:center;
+    width:100%;
 
-padding:20px 60px;
+    display:flex;
 
-background:#111;
+    justify-content:space-between;
 
-position:fixed;
+    align-items:center;
 
-width:100%;
+    padding:20px 50px;
 
-box-sizing:border-box;
+    background:rgba(10,10,10,.92);
+
+    backdrop-filter:blur(8px);
+
+    z-index:1000;
 
 }
 
 .logo img{
 
-height:90px;
+    height:75px;
 
 }
 
 nav a{
 
-color:white;
+    color:#ddd;
 
-text-decoration:none;
+    text-decoration:none;
 
-margin-left:30px;
+    margin-left:30px;
 
-font-size:15px;
+    text-transform:uppercase;
 
-letter-spacing:2px;
+    letter-spacing:2px;
 
-text-transform:uppercase;
+    font-size:14px;
+
+    transition:.3s;
+
+}
+
+nav a:hover{
+
+    color:#c8a86a;
 
 }
 
 .hero{
 
-height:100vh;
+    height:100vh;
 
-background:url("hero.jpg");
+    background:url("hero.jpg") center center/cover no-repeat;
 
-background-size:cover;
+    display:flex;
 
-background-position:center;
+    justify-content:center;
 
-display:flex;
+    align-items:center;
 
-justify-content:center;
+    text-align:center;
 
-align-items:center;
-
-text-align:center;
+    position:relative;
 
 }
 
-.overlay{
+.hero::before{
 
-background:rgba(0,0,0,.45);
+    content:"";
 
-padding:60px;
+    position:absolute;
 
-}
+    inset:0;
 
-h1{
-
-font-family:'Cormorant Garamond',serif;
-
-font-size:72px;
-
-margin:0;
-
-letter-spacing:6px;
+    background:rgba(0,0,0,.45);
 
 }
 
-h2{
+.hero-content{
 
-font-family:'Cormorant Garamond',serif;
+    position:relative;
 
-font-weight:300;
-
-letter-spacing:8px;
-
-margin-top:10px;
+    z-index:1;
 
 }
 
-.small{
+.hero h1{
 
-opacity:.8;
+    font-family:'Cormorant Garamond',serif;
 
-margin-top:20px;
+    font-size:82px;
+
+    letter-spacing:6px;
+
+}
+
+.hero h2{
+
+    font-family:'Cormorant Garamond',serif;
+
+    font-weight:400;
+
+    font-size:38px;
+
+    color:#c8a86a;
+
+    margin-bottom:20px;
+
+}
+
+.tagline{
+
+    font-size:22px;
+
+}
+
+.sub{
+
+    color:#bbb;
+
+    margin-bottom:35px;
 
 }
 
 .button{
 
-display:inline-block;
+    display:inline-block;
 
-margin-top:35px;
+    padding:14px 34px;
 
-padding:14px 35px;
+    border:1px solid #c8a86a;
 
-border:1px solid #c5a46d;
+    color:#c8a86a;
 
-color:#c5a46d;
+    text-decoration:none;
 
-text-decoration:none;
-
-transition:.3s;
+    transition:.3s;
 
 }
 
 .button:hover{
 
-background:#c5a46d;
+    background:#c8a86a;
 
-color:#111;
-
-}
-
-.intro{
-
-max-width:900px;
-
-margin:auto;
-
-padding:120px 30px;
-
-text-align:center;
-
-line-height:1.8;
+    color:#111;
 
 }
 
-.intro h3{
+section{
 
-font-family:'Cormorant Garamond',serif;
+    max-width:1100px;
 
-font-size:48px;
+    margin:auto;
 
-color:#c5a46d;
-
-}
-
-.featured{
-
-padding:80px;
-
-text-align:center;
+    padding:120px 30px;
 
 }
 
-.featured img{
+section h2{
 
-width:90%;
+    font-family:'Cormorant Garamond',serif;
 
-max-width:900px;
+    font-size:48px;
 
-border-radius:10px;
+    color:#c8a86a;
 
-box-shadow:0 0 40px rgba(0,0,0,.6);
+    margin-bottom:30px;
+
+}
+
+#guitars img{
+
+    width:100%;
+
+    border-radius:8px;
+
+    box-shadow:0 15px 40px rgba(0,0,0,.5);
+
+}
+
+.gallery{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+
+    gap:20px;
+
+}
+
+.gallery img{
+
+    width:100%;
+
+    border-radius:8px;
+
+    transition:.3s;
+
+}
+
+.gallery img:hover{
+
+    transform:scale(1.03);
+
+}
+
+a{
+
+    color:#c8a86a;
 
 }
 
 footer{
 
-padding:80px;
+    text-align:center;
 
-text-align:center;
+    padding:50px;
 
-background:#080808;
+    color:#888;
 
-color:#999;
+    border-top:1px solid #222;
+
+}
+
+@media(max-width:800px){
+
+header{
+
+    flex-direction:column;
+
+    padding:15px;
+
+}
+
+nav{
+
+    margin-top:15px;
+
+}
+
+nav a{
+
+    margin:0 10px;
+
+    font-size:12px;
+
+}
+
+.hero h1{
+
+    font-size:48px;
+
+}
+
+.hero h2{
+
+    font-size:26px;
+
+}
+
+section{
+
+    padding:80px 20px;
+
+}
 
 }
