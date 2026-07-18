@@ -479,15 +479,15 @@ font-size:15px;
 
 }
 
-/* News */
+/* Journal */
 
-.news-post{
+.journal-post{
 
 margin:60px 0;
 
 }
 
-.news-post h4{
+.journal-post h4{
 
 font-size:34px;
 
@@ -497,7 +497,7 @@ color:#c8a86a;
 
 }
 
-.news-date{
+.journal-date{
 
 color:#888;
 
