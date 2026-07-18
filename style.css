@@ -441,5 +441,83 @@ h3{
 }
 
 }
+/* Workshop */
 
+.workshop-card{
+
+background:#111;
+
+padding:20px;
+
+border-radius:10px;
+
+transition:.3s;
+
+}
+
+.workshop-card:hover{
+
+transform:translateY(-6px);
+
+}
+
+.workshop-card h4{
+
+margin:20px 0 10px;
+
+color:#c8a86a;
+
+font-size:24px;
+
+font-family:'Cormorant Garamond',serif;
+
+}
+
+.workshop-card p{
+
+font-size:15px;
+
+}
+
+/* News */
+
+.news-post{
+
+margin:60px 0;
+
+}
+
+.news-post h4{
+
+font-size:34px;
+
+font-family:'Cormorant Garamond',serif;
+
+color:#c8a86a;
+
+}
+
+.news-date{
+
+color:#888;
+
+font-size:14px;
+
+letter-spacing:2px;
+
+text-transform:uppercase;
+
+margin-bottom:20px;
+
+}
+
+hr{
+
+border:none;
+
+border-top:1px solid #222;
+
+margin:70px 0;
+
+}
 ```
